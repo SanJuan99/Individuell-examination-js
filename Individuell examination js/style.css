@@ -1,0 +1,172 @@
+#background {
+    background: linear-gradient(90deg, #0C164D 0%, #190B22 100%);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    /* skapar bakgrund och ser till så att den tar upp hela höjden och bredden */
+}
+
+/* HEADER */
+.solarsystem-text-container {
+    text-align: right;
+    margin: 30px 50px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    text-align: right;
+    /* placerar header texten till höger där jag vill ha den */
+}
+
+.solarsystem-header {
+    font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.solarsystem-text {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 14px;
+    color: #FFD029;
+    margin-top: 10px;
+}
+
+/* MAIN */
+#search-section {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px; 
+}
+
+#search-field {
+    width: 300px;  
+    height: 40px;  
+    font-size: 16px;
+} 
+
+#search-button {
+    display: inline-block;
+    width: 45px;
+    height: 45px; 
+    font-size: 16px;
+    border: 1px solid black; /* Ändrar färg efter behov */
+    background-color: lightgray; /* Ändrar färg efter behov */
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    line-height: 45px;
+    /* a-tagg som är stylad så den ser ut som en button */
+  }
+
+#planets-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 75px;
+    height: 950px;
+}
+
+/* Denna container är till för att visa mer eller mindre av solen */
+#sun-container {
+    width: 220px; 
+    height: 850px;
+    display: flex;
+    align-items: center;
+}
+/* sun-wrapper gör så att min box-shadow blir synlig och skapar solens glödande effekt */
+#sun-wrapper {
+    width: 850px;
+    height: 850px;
+    border-radius: 50%;
+    padding: 50px;
+    transform: translateX(-760px);
+}
+/* Här skapar jag min sol och alla planeter med hjälp av width, height och background-color */
+#sun {
+    width: 850px;
+    height: 850px;
+    background-color: #FFD029;
+    border-radius: 50%;
+    box-shadow: 0 0 100px 25px #FFD029;
+}
+/* Gör så att alla planeter blir runda */
+.planet {
+    border-radius: 50%;
+}
+/* storlek och utseende på planeterna */
+#merkurius {
+    width: 14px;
+    height: 14px;
+    background-color: #888888;
+}
+
+#venus {
+    width: 26px;
+    height: 26px;
+    background-color: #E7CDCD;
+}
+
+#jorden {
+    width: 28px;
+    height: 28px;
+    background-color: #428ED4;
+}
+
+#mars {
+    width: 14px;
+    height: 14px;
+    background-color: #EF5F5F;
+}
+
+#jupiter {
+    width: 188px;
+    height: 188px;
+    background-color: #E29468;
+}
+
+#saturnus {
+    width: 144px;
+    height: 144px;
+    background-color: #C7AA72;
+    position: relative;
+}
+
+#saturnus::before {
+    content: "";
+    width: 230px; /* Bredden på sträcket */
+    height: 4px; /* Tjocklek på sträcket */
+    background-color:  #FFFFFF; /* Färg på sträcket */
+    position: absolute;
+    top: 50%; /* Centrerar vertikalt */
+    left: 50%; /* Centrerar horisontellt */
+    transform: translate(-50%, -50%) rotate(135deg); /* Rotera sträcket 45 grader */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.801) 20%, rgba(255, 255, 255, 0.678) 80%, rgba(255, 255, 255, 0) 100%); 
+    /* SKAPAR EN EFFEKT SOM GÖR RINGEN MER SPETSIG OCH GENOMSKINLIG */
+}
+
+#saturnus .planet {
+    width: 100%;
+    height: 100%;
+    background-color: #C7AA72;
+    border-radius: 50%;
+}
+
+#uranus {
+    width: 66px;
+    height: 66px;
+    background-color: #C9D4F1;
+}
+
+#neptunus {
+    width: 66px;
+    height: 66px;
+    background-color: #7A91A7;
+}

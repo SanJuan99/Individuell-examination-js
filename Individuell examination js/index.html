@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Individuell examination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Secular+One&display=swap" rel="stylesheet">
+</head>
+<body id="background">
+    <!-- HÄR ÄR MIN HEADER OCH HEADER TEXT -->
+    <header class="solarsystem-text-container">
+        <div>
+        <h1 class="solarsystem-header">SOLSYSTEMET</h1>
+        <p class="solarsystem-text">SOLARIS</p>
+        </div>
+    </header>
+    <!-- HÄR ÄR MIN MAIN SOM JAG HAR SAMLAT ALLA MINA DIVAR I(PLANETER OCH SOLEN) och även mitt sökfält -->
+    <main>
+        <section id="search-section">
+            <input type="text" id="search-field" placeholder="Skriv in en planet...">
+            <!-- <button id="search-button">Sök</button> -->
+            <a id="search-button" href="">Sök</a>
+        </section>
+        <!-- Gjorde en egen container för solen så jag kunde skapa en lysande/skugg effekt -->
+        <section id="planets-section">
+            <div id="sun-container">
+                <div id="sun-wrapper">
+                    <div id="sun"></div>
+                </div>
+            </div>
+            <div id="merkurius" class="planet"></div>
+            <div id="venus" class="planet"></div>
+            <div id="jorden" class="planet"></div>
+            <div id="mars" class="planet"></div>
+            <div id="jupiter" class="planet"></div>
+            <div id="saturnus" class="planet">
+                <div class="saturnus-wrapper">
+                    <div class="ring"></div>
+                    <div class="planet"></div>
+                </div>
+            </div>
+            <div id="uranus" class="planet"></div>
+            <div id="neptunus" class="planet"></div>
+        </section>
+        <!-- Jag gjorde två js filer eftersom jag vill få fram datan på en ny sida. detta är länken till min main js fil -->
+        <script src="main.js"></script> 
+    </main>
+</body>
+</html>
